@@ -2,16 +2,16 @@
 
 ## Coming for OSS
 
-![extend](img/embrace-extend.png)
+![extend](src/img/embrace-extend.png)
 
 ## Linux is ...?
 
-![ballmer](img/ballmer.jpg)
+![ballmer](src/img/ballmer.jpg)
 
 ## War
 
-![war](img/bug-number-one.png)
+![war](src/img/bug-number-one.png)
 
 ## Runs deep
 
-![deep](img/do-not-hire.png)
+![deep](src/img/do-not-hire.png)

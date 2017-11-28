@@ -1,22 +1,22 @@
 ## We've met the characters
 
-## Now... one day in 2012
+## October 1st 2012
 
 ## A MSFT legend released a new project
 
-![img](img/anders.jpg)
+![img](src/img/anders.jpg)
 
 ##    
-![img](img/trojan.jpg)
+![img](src/img/trojan.jpg)
 
 ##   
-![img](img/ugly.png)
+![img](src/img/ugly.png)
 
-## Immediately, the JS community kicks into action
+## The JS community acts...
 
-![img](img/nobody.png)
+![img](src/img/nobody.png)
 
 ## But... incredibly
 
-![img](img/like-it.png)
+![img](src/img/like-it.png)
 

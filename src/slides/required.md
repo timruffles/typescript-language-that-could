@@ -14,7 +14,7 @@ improveUserExperience();
 
 ## JS adds behaviour to webpages
 
-![behaviour](img/behaviour.gif)
+![behaviour](src/img/behaviour.gif)
 
 ## JS started ugly
 
@@ -24,11 +24,11 @@ improveUserExperience();
 
 ## Static vs dynamic
 
-![tab sp](img/tab-spaces.jpg)
+![tab sp](src/img/tab-spaces.jpg)
 
 ## Self-image
 
-![mac-pc](img/self-image.jpg)
+![mac-pc](src/img/self-image.jpg)
 
 ## For instance...
 
@@ -46,7 +46,7 @@ improveUserExperience();
 
 ## HTML + CSS + JS
 
-![24-hours](img/24-hours.jpg)
+![24-hours](src/img/24-hours.jpg)
 
 ## It was wonderful, then...
 
@@ -56,21 +56,21 @@ improveUserExperience();
 
 ## C++
 
-![c++](img/c++)
+![c++](src/img/c++)
 
 ## Ruby
 
-![picklive](img/picklive_homepage.png)
+![picklive](src/img/picklive_homepage.png)
 
-## Why!
+## _why
 
-![why](img/why.png)
+![why](src/img/why.png)
 
 ## Java
 
-![ugly](img/ugly.png)
+![ugly](src/img/ugly.png)
 
 ## Boring
 
-![boring](img/yawn.jpg)
+![boring](src/img/yawn.jpg)
 
