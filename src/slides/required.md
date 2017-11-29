@@ -1,5 +1,5 @@
 ## Prologue
-{class:'title'}
+{state:'title'}
 
 ## Javascript
 {class:'notitle'}
@@ -13,10 +13,13 @@ function improveUserExperience() {
 improveUserExperience();
 ```
 
+<aside class=notes>
+TypeScript is part of the JS ecosystem
+</aside>
+
 ## Interactivity
 
 ![behaviour](src/img/behaviour.gif)
-
 
 
 ## JS is a 'dynamic' language
@@ -33,8 +36,6 @@ improveUserExperience();
 
 ![mac-pc](src/img/self-image.png)
 
-## I've mostly used dynamic
-
 ## Q-Basic
 {class:"q-basic"}
 
@@ -42,6 +43,10 @@ improveUserExperience();
 10 PRINT "Tim is cool"
 20 GOTO 10
 ```
+
+<aside class=notes>
+I started out with dynamic
+</aside>
 
 ## HTML + CSS + JS
 {class:'notitle'}

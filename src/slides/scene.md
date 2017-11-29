@@ -1,5 +1,5 @@
 ## We've met the characters
-{class:'title'}
+{state:'title'}
 
 ## The most popular language in the world
 

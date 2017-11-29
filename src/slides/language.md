@@ -1,5 +1,5 @@
-## What's it like?
-{class:'title'}
+## The language
+{state:'title'}
 
 ## Extending
 

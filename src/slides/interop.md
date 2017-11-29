@@ -1,5 +1,5 @@
 ## TS + JS
-{class:'title'}
+{state:'title'}
 
 ## Instant gratification
 
@@ -15,8 +15,15 @@ npm install express @types/express
 
 ## Gradual typing
 
-- `allowJs`, `checkJs`
-- `moduleResolution=node`
+```javascript
+// options: allowJs + checkJs
+
+// will use @types/express automatically
+import express from "express";
+
+// will be typechecked
+import { someExport } from "./some/js/file";
+```
 
 ## e.g Mirage
 

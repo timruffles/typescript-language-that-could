@@ -1,5 +1,5 @@
 ## TypeScript
-{class: "front"}
+{state: "title"}
 
 <aside class=notes>
 Today talk tech. But also, how 1 of biggest anti-open-source voice in history,

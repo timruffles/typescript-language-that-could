@@ -27,7 +27,7 @@ body {
   font-size: 48px;
 }
 
-.title body, .q body, .a body {
+.subtitle body, .title body, .q body, .a body {
   background: #19B8D2;
 }
 .title .reveal h1, .title .reveal h2 {

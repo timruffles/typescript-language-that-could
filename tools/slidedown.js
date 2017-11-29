@@ -53,7 +53,9 @@ exports.parse = function(source) {
       }
       const tags = _.map(metaData.tags, (v, k) => `data-${k}='${v}'`);
 
-      const slideHtml = `<section ${tags} class="${metaData.class}">${html}</section>`;
+      const state = metaData.state ? `data-state=${metaData.state}` : '';
+
+      const slideHtml = `<section ${state} ${tags} class="${metaData.class}">${html}</section>`;
 
       return { type: 'html', pre: false, text: slideHtml + '\n\n' };
     },

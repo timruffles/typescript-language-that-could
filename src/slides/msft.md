@@ -4,7 +4,7 @@
 ![extend](src/img/embrace-extend.png)
 
 ## Microsoft & OSS?!
-{class:'subtitle'}
+{state:'title'}
 
 ## Linux is ...?
 {class:'notitle'}

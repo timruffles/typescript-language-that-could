@@ -1,6 +1,5 @@
-
-## How did TS win?
-{class: 'title'}
+## Why was TS the winner?
+{state: 'title'}
 
 ## Worse is better?
 
@@ -26,6 +25,8 @@
 > can be sacrificed in favor of any other quality
 
 - Shipped without generics
+
+## Further
 
 ## Not greedy!
 
