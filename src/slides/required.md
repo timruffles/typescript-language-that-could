@@ -1,38 +1,39 @@
-## Required
+## Prologue
+{class:'title'}
 
 ## Javascript
+{class:'notitle'}
 
 ```javascript
 function improveUserExperience() {
-  if(prompt("Do you love JS yet?") !== "yes") {
+  if(prompt("Do you love Javascript yet?") !== "yes")
     improveUserExperience();
-  }
 }
 
 improveUserExperience();
 ```
 
-## JS adds behaviour to webpages
+## Interactivity
 
 ![behaviour](src/img/behaviour.gif)
 
-## JS started ugly
 
-> JS had to "look like Java" only less so, be Java's dumb kid brother or boy-hostage sidekick. Plus, I had to be done in ten days or something worse than JS would have happened.
 
 ## JS is a 'dynamic' language
 
 ## Static vs dynamic
 
+## Static vs dynamic
+{class:'notitle'}
+
 ![tab sp](src/img/tab-spaces.jpg)
 
 ## Self-image
+{class:'notitle'}
 
-![mac-pc](src/img/self-image.jpg)
+![mac-pc](src/img/self-image.png)
 
-## For instance...
-
-## I started out early
+## I've mostly used dynamic
 
 ## Q-Basic
 {class:"q-basic"}
@@ -42,9 +43,8 @@ improveUserExperience();
 20 GOTO 10
 ```
 
-## Powerpoint
-
 ## HTML + CSS + JS
+{class:'notitle'}
 
 ![24-hours](src/img/24-hours.jpg)
 
@@ -52,25 +52,48 @@ improveUserExperience();
 
 ## Horror
 
-## GSCE IT
+## C++
+{class:'notitle'}
+
+![c++](src/img/cpp.png)
 
 ## C++
+{class:'notitle'}
 
-![c++](src/img/c++)
+![win+](src/img/win.png)
+
+## Java
+{class:'notitle'}
+
+![ugly](src/img/ugly.png)
 
 ## Ruby
+{class:'notitle'}
 
 ![picklive](src/img/picklive_homepage.png)
 
 ## _why
+{class:'notitle'}
 
 ![why](src/img/why.png)
 
-## Java
-
-![ugly](src/img/ugly.png)
-
 ## Boring
+{class:'notitle'}
 
 ![boring](src/img/yawn.jpg)
 
+## Many have tried to kill JS
+
+## JS started ugly
+
+> JS had to "look like Java" only less so, be Java's dumb kid brother or boy-hostage sidekick.
+
+> Plus, I had to be done in ten days or something worse than JS would have happened.
+
+## But people loved it
+
+> Any application that can be written in JavaScript, will eventually be written in JavaScript
+
+Jeff Atwood
+
+## So all have failed

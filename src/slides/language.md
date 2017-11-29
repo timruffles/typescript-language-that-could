@@ -1,11 +1,28 @@
-## Not 'killing' JS
+## What's it like?
 {class:'title'}
 
 ## Extending
 
 ## A superset of modern JS
 
-## Before
+![img](src/img/superset.png)
+
+## JS today
+
+```javascript
+class Queue {
+  async flush() {
+    let item;
+    while(item = await this.next()) {
+      this.act(item, ({ id }) => {
+        console.log(\`${id} done\`);
+      });
+    }
+  }
+}
+```
+
+## Some JS
 
 ```javascript
 function getHostname(url) {
@@ -15,17 +32,18 @@ function getHostname(url) {
 }
 ```
 
-## After
+## Some TS
 
 ```javascript
 function getHostname(url: string): string {
-  const a: HTMLAnchorElement = document.createElement("a");
+  const a: HTMLAnchorElement =
+     document.createElement("a");
   a.href = url;
   return a.hostname;
 }
 ```
 
-## With types!
+## Types!
 
 ```javascript
 function...(url: string): string ...
@@ -34,28 +52,52 @@ function...(url: string): string ...
 }
 ```
 
-## Types
-
-Where do you want the bugs to show up?
+## Where do you want the bugs to show up?
 
 ## Without types
 
 ```javascript
-TODO
+const parent = el.parentElement;
+parent.setAttribute("src", imageLocation);
 ```
 
-## Errors identified by users 
+## boom
+{class:'notitle'}
+
+```javascript
+const parent = el.parentElement;
+
+// Error: Cannot read property 
+//    'setAttribute' of undefined
+parent.setAttribute("src", imageLocation);
+```
 
 ## VS...
 
 ```javascript
-TODO
+const parent = el.parentElement;
+// object is possibly null
+parent.setAttribute("src", imageLocation);
 ```
 
-## Compiled output
+## TypeScript feels familiar
+
+## e.g vs Coffeescript
+
+```coffeescript
+getHostname = (url) =>
+  a = document.createElement "a"
+  a.href = url
+  a.hostname
+```
+
+## Especially when compiled
+
+```sh
+tsc example.ts
+```
 
 ```javascript
-// compiler output: boring
 function getHostname(url) {
   const a = document.createElement("a");
   a.href = url;
@@ -80,16 +122,7 @@ var main = render(fold(Data_Foldable.foldableArray)
         "Try PureScript!"))]));
 ```
 
-## Or even vs Coffeescript
 
-```coffeescript
-getHostname = (url) =>
-  a = document.createElement "a"
-  a.href = url
-  a.hostname
-```
-
-## TypeScript feels familiar
 
 ## Same runtime semantics
 
@@ -99,16 +132,26 @@ getHostname = (url) =>
 
 ## And same VMs
 
-## So it's "Just Javascript"
+## So... JS with types
+
+## Highlights
+
+- inference
+- structual typing
+- generics
+- type unions
+- mapped types
+
 
 ## It's not dumb
-{class:'subtitle'}
+{class:'notitle'}
 
 ![dumb](src/img/static-types.jpg)
 
 ## Inference
 
 ```java
+// Java gave static types a bad name
 String message = "hi";
 ```
 
@@ -126,23 +169,30 @@ double(message);
 // infers return type: Element | undefined
 function getOffset(node: Element) {
   if (node instanceof HTMLElement) {
-    // control-flow analysis: clear this is a HTMLElement,
+    // control-flow analysis:
+    // clear this is a HTMLElement,
     // rather than a plain Element
     return node.offsetParent;
   }
 } 
 ```
 
-## Embraces current idioms
+## Embraces dynamic idioms
 
-## e.g underscore/lodash
+## e.g
+{class:'notitle'}
 
 ```javascript
-// we know this is a list of names, string[], but can TypeScript?
-const names = _.pick([{name: "c#"}, {name: "f#"}, {name: "d"}], "name");
+// we know this is a list of names, 
+// string[], but can TypeScript?
+const names = _.pick([
+  {name: "c#"}, 
+  {name: "f#"},
+  {name: "d"}
+], "name");
 ```
 
-## Yes!
+## Can be typed
 
 ```javascript
 // mapped types
@@ -155,14 +205,91 @@ function pick<
   Key extends keyof Type
 >(obj: Type, ...keys: Key[]): Pick<Type, Key>;
 ```
+## Tagged unions
 
+## Tagged unions
+{class:'notitle'}
 
-## Language features TODO
+```typescript
+interface Sms {
+  kind: 'sms';
+  number: string;
+}
+interface Email {
+  kind: 'email';
+  address: string;
+}
 
-- structual typing
-- functional (e.g the rewrite PR to drag drop shim)
-- type unions
-- primitive enums (strings)
-- exhaustiveness checking
-- tagged unions
+type Destination = Sms | Email;
+```
+
+## Unions
+{class:'notitle'}
+
+```javascript
+function formatRecipient(dest: Destination) {
+  switch(dest.kind) {
+    case 'sms':
+      return \`Via text message to ${dest.number}\`;
+    case 'email':
+      return \`Via email to ${dest.address}\`;
+  }
+}
+```
+
+## Safe?
+
+```javascript
+function formatRecipient(dest: Destination) {
+  switch(dest.kind) {
+    case 'sms':
+      return \`Via text message to ${dest.number}\`;
+  }
+}
+```
+
+## Exhaustiveness checking
+
+```javascript
+// error: not all code paths return a value
+function formatRecipient(dest: Destination) {
+  switch(dest.kind) {
+    case 'sms':
+      return \`Via text message to ${dest.number}\`;
+  }
+}
+```
+
+## Niceties
+
+## Property handling
+
+## Property handling
+{class:'notitle'}
+```javascript
+// immutable record type
+class PhoneNumber {
+  readonly kind: 'phoneNumber'
+
+  constructor(
+    readonly country: number,
+    readonly area: number,
+    readonly number: number,
+  ) {}
+}
+```
+
+## Structual typing
+
+## Structual typing
+{class:'notitle'}
+
+```javascript
+// structual typing, classes as interfaces
+const number: PhoneNumber = {
+  country: 44,
+  code: 1225,
+  number: 733221,
+};
+```
 
