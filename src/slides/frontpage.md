@@ -16,12 +16,12 @@ Shipped a massively successful addition to the JS ecosystem.
 How big?
 </aside>
 
-## Launched the killer Javascript OSS project...
+## Success
 {class:'notitle'}
 
 ![growth](src/img/growth.png)
 
-## well?
+## Success 2
 {class:'notitle'}
 
 > traffic to TypeScript questions grew ... enough that we left it off to avoid overwhelming the rest of the scale. 

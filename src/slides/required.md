@@ -51,6 +51,11 @@ I started out with dynamic
 
 ![ugly](src/img/ugly.png)
 
+## AS3
+{class:'notitle'}
+
+![as3](src/img/as3.jpg)
+
 ## Ruby
 {class:'notitle'}
 
