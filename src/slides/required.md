@@ -32,6 +32,14 @@ I started out with dynamic
 
 ![24-hours](src/img/24-hours.jpg)
 
+## JS
+
+```html
+<img onmouseover='rollover()'
+     src='/dancing-hamster.gif'
+     alt='A cool dancing hamster' />
+```
+
 ## It was wonderful, then...
 
 ## Horror
@@ -51,10 +59,6 @@ I started out with dynamic
 
 ![ugly](src/img/ugly.png)
 
-## AS3
-{class:'notitle'}
-
-![as3](src/img/as3.jpg)
 
 ## Ruby
 {class:'notitle'}
@@ -66,10 +70,25 @@ I started out with dynamic
 
 ![why](src/img/why.png)
 
+<aside class=notes>
+A community who valued creativity, and didn't even WANT types
+</aside>
+
 ## Boring
 {class:'notitle'}
 
 ![boring](src/img/yawn.jpg)
+
+## AS3
+{class:'notitle'}
+
+![as3](src/img/as3.jpg)
+
+<aside class=notes>
+My exposure was to unsuccessful typed languages
+
+Since then...
+</aside>
 
 ## Many have tried to kill JS
 
@@ -86,3 +105,9 @@ I started out with dynamic
 Jeff Atwood
 
 ## So all have failed
+
+<aside class=notes>
+So with this background, it's a hard pitch.
+
+And microsoft was the MOST unlikely of all
+</aside>
