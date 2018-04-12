@@ -137,7 +137,7 @@ var main = render(fold(Data_Foldable.foldableArray)
 ## Highlights
 
 - inference
-- structual typing
+- structural typing
 - generics
 - type unions
 - mapped types

@@ -1,27 +1,6 @@
 ## Prologue
 {state:'title'}
 
-## Javascript
-{class:'notitle'}
-
-```javascript
-function improveUserExperience() {
-  if(prompt("Do you love Javascript yet?") !== "yes")
-    improveUserExperience();
-}
-
-improveUserExperience();
-```
-
-<aside class=notes>
-TypeScript is part of the JS ecosystem
-</aside>
-
-## Interactivity
-
-![behaviour](src/img/behaviour.gif)
-
-
 ## JS is a 'dynamic' language
 
 ## Static vs dynamic
